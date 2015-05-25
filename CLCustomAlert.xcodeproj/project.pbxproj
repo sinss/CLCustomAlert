@@ -14,6 +14,11 @@
 		B30405491B12BBC30084577E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30405481B12BBC30084577E /* Images.xcassets */; };
 		B304054C1B12BBC30084577E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B304054A1B12BBC30084577E /* LaunchScreen.xib */; };
 		B30405581B12BBC30084577E /* CLCustomAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30405571B12BBC30084577E /* CLCustomAlertTests.m */; };
+		B304056B1B12BBF30084577E /* CLActionAlertControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B30405631B12BBF30084577E /* CLActionAlertControl.m */; };
+		B304056C1B12BBF30084577E /* CLActionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B30405651B12BBF30084577E /* CLActionControl.m */; };
+		B304056D1B12BBF30084577E /* CLAlertControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B30405671B12BBF30084577E /* CLAlertControl.m */; };
+		B304056E1B12BBF30084577E /* CLHintControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B30405691B12BBF30084577E /* CLHintControl.m */; };
+		B30405711B12C2410084577E /* CLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B30405701B12C2410084577E /* CLTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,17 @@
 		B30405511B12BBC30084577E /* CLCustomAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLCustomAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30405561B12BBC30084577E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30405571B12BBC30084577E /* CLCustomAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCustomAlertTests.m; sourceTree = "<group>"; };
+		B30405621B12BBF30084577E /* CLActionAlertControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLActionAlertControl.h; sourceTree = "<group>"; };
+		B30405631B12BBF30084577E /* CLActionAlertControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLActionAlertControl.m; sourceTree = "<group>"; };
+		B30405641B12BBF30084577E /* CLActionControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLActionControl.h; sourceTree = "<group>"; };
+		B30405651B12BBF30084577E /* CLActionControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLActionControl.m; sourceTree = "<group>"; };
+		B30405661B12BBF30084577E /* CLAlertControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAlertControl.h; sourceTree = "<group>"; };
+		B30405671B12BBF30084577E /* CLAlertControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAlertControl.m; sourceTree = "<group>"; };
+		B30405681B12BBF30084577E /* CLHintControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHintControl.h; sourceTree = "<group>"; };
+		B30405691B12BBF30084577E /* CLHintControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHintControl.m; sourceTree = "<group>"; };
+		B304056A1B12BBF30084577E /* ControlDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlDefine.h; sourceTree = "<group>"; };
+		B304056F1B12C2410084577E /* CLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTextField.h; sourceTree = "<group>"; };
+		B30405701B12C2410084577E /* CLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		B304053A1B12BBC30084577E /* CLCustomAlert */ = {
 			isa = PBXGroup;
 			children = (
+				B30405611B12BBF30084577E /* Classes */,
 				B304053F1B12BBC30084577E /* AppDelegate.h */,
 				B30405401B12BBC30084577E /* AppDelegate.m */,
 				B30405421B12BBC30084577E /* ViewController.h */,
@@ -117,6 +134,24 @@
 				B30405561B12BBC30084577E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B30405611B12BBF30084577E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B304056A1B12BBF30084577E /* ControlDefine.h */,
+				B30405621B12BBF30084577E /* CLActionAlertControl.h */,
+				B30405631B12BBF30084577E /* CLActionAlertControl.m */,
+				B30405641B12BBF30084577E /* CLActionControl.h */,
+				B30405651B12BBF30084577E /* CLActionControl.m */,
+				B30405661B12BBF30084577E /* CLAlertControl.h */,
+				B30405671B12BBF30084577E /* CLAlertControl.m */,
+				B30405681B12BBF30084577E /* CLHintControl.h */,
+				B30405691B12BBF30084577E /* CLHintControl.m */,
+				B304056F1B12C2410084577E /* CLTextField.h */,
+				B30405701B12C2410084577E /* CLTextField.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30405711B12C2410084577E /* CLTextField.m in Sources */,
 				B30405441B12BBC30084577E /* ViewController.m in Sources */,
+				B304056C1B12BBF30084577E /* CLActionControl.m in Sources */,
 				B30405411B12BBC30084577E /* AppDelegate.m in Sources */,
+				B304056D1B12BBF30084577E /* CLAlertControl.m in Sources */,
+				B304056E1B12BBF30084577E /* CLHintControl.m in Sources */,
 				B304053E1B12BBC30084577E /* main.m in Sources */,
+				B304056B1B12BBF30084577E /* CLActionAlertControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
