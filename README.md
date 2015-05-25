@@ -42,7 +42,7 @@ It's custom alert that used in our product at Ceylon Innovation Co., Ltd
 
 ```
 
-．Alert like
+．Alert like without input field
 
 ```objective-c
 #import "CLActionAlertControl.h"
@@ -64,3 +64,24 @@ It's custom alert that used in our product at Ceylon Innovation Co., Ltd
     [control showInView:self.view];
 
 ```
+
+．Alert like with an input field
+
+```objective-c
+#import "CLActionAlertControl.h"
+
+    CLActionAlertControl *control = [[CLActionAlertControl alloc] initInputActionWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth / 2, self.view.center.y - CLInputAlertHeight / 2, kCLActionAlertControlWidth, CLInputAlertHeight) title:@"Title \n subtitle" hint:@"Input here" image:[UIImage imageNamed:@""]];
+    
+    [control setActionBlock:^(CLAction action, id sender) {
+        if (action == CLActionOK)
+        {
+            UITextField *input = (UITextField*)sender;
+            
+            NSLog(@"user input : %@", input.text);
+        }
+    }];
+    
+    [control showInView:self.view];
+
+```
+
