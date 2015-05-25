@@ -31,7 +31,7 @@
 #pragma mark - Test UI
 - (IBAction)showAlertControl:(id)sender
 {
-    CLAlertControl *control = [[CLAlertControl alloc] initWithFrame:CGRectMake(self.tabBarController.view.center.x - kCLAlertControlWidth / 2, -CLActionControlHeight, kCLAlertControlWidth, CLAlertControlHeight) title:@"Title" message:@"Message With %@ \n subMessage" targetName:@"帳戶「兌換紀錄」" image:[UIImage imageNamed:@"dota_bg"]];
+    CLAlertControl *control = [[CLAlertControl alloc] initWithFrame:CGRectMake(self.tabBarController.view.center.x - kCLAlertControlWidth / 2, -CLActionControlHeight, kCLAlertControlWidth, CLAlertControlHeight) title:@"Title" message:@"Message With %@ \n subMessage" targetName:@"Target Name" image:[UIImage imageNamed:@"dota_bg"]];
     
     [control showInView:self.view];
     
@@ -85,7 +85,7 @@
 
 - (IBAction)showInviteActionAlertControl:(id)sender
 {
-    CLActionAlertControl *control = [[CLActionAlertControl alloc] initInviteWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth, self.view.center.y - CLInviteActionAlertHeight / 2, kCLActionAlertControlWidth, CLInviteActionAlertHeight) title:@"新朋友登入，輸入您的代碼可以一起獲得 200 點獎勵喔！\n快揪朋友起來共享好康！" inviteHint:@"邀請代碼分享方式" inviteCode:@"1234567" image:[UIImage imageNamed:@"dota"] shareImage:[UIImage imageNamed:@"icon_share"] copyImage:[UIImage imageNamed:@"icon_copy"]];
+    CLActionAlertControl *control = [[CLActionAlertControl alloc] initInviteWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth, self.view.center.y - CLInviteActionAlertHeight / 2, kCLActionAlertControlWidth, CLInviteActionAlertHeight) title:@"Title \n subtitle" inviteHint:@"hint Message" inviteCode:@"1234567" image:[UIImage imageNamed:@""] shareImage:[UIImage imageNamed:@""] copyImage:[UIImage imageNamed:@""]];
     
     [control setActionBlock:^(CLAction action, id sender){
         
@@ -104,7 +104,7 @@
 
 - (IBAction)showUpdateActionAlertControl:(id)sender
 {
-    CLActionAlertControl *control = [[CLActionAlertControl alloc] initUpdateWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth, self.view.center.y - CLUpdateActionAlertHeight / 2, kCLActionAlertControlWidth, CLUpdateActionAlertHeight) title:@"Title" message:@"有新版本嘍!是否立即更新" image:[UIImage imageNamed:@"dota_bg"]];
+    CLActionAlertControl *control = [[CLActionAlertControl alloc] initUpdateWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth, self.view.center.y - CLUpdateActionAlertHeight / 2, kCLActionAlertControlWidth, CLUpdateActionAlertHeight) title:@"Title" message:@"There is a new version \n Update ?" image:[UIImage imageNamed:@"dota_bg"]];
     
     [control setActionBlock:^(CLAction action, id sender){
         
@@ -124,7 +124,7 @@
 - (IBAction)showRewardActionAlertControl:(id)sender
 {
     //CLRewardPointsAlertHeight
-    CLActionAlertControl *control = [[CLActionAlertControl alloc] initInviteRewardWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth, self.view.center.y - CLRewardPointsAlertHeight / 2, kCLActionAlertControlWidth, CLRewardPointsAlertHeight) title:@"恭喜你與你好友一起獲得" message:@"揪好友 來賺點數" points:@999 image:[UIImage imageNamed:@""]];
+    CLActionAlertControl *control = [[CLActionAlertControl alloc] initInviteRewardWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth, self.view.center.y - CLRewardPointsAlertHeight / 2, kCLActionAlertControlWidth, CLRewardPointsAlertHeight) title:@"Congrats" message:@"Message" points:@999 image:[UIImage imageNamed:@""]];
     
     [control setActionBlock:^(CLAction action, id sender){
         
@@ -143,7 +143,7 @@
 
 - (IBAction)showInputActionControl:(id)sender
 {
-    CLActionAlertControl *control = [[CLActionAlertControl alloc] initInputActionWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth / 2, self.view.center.y - CLInputAlertHeight / 2, kCLActionAlertControlWidth, CLInputAlertHeight) title:@"攜手跟好友 同享好康\n輸入朋友代碼\n你和好友都可獲得200點獎勵喔!" hint:@"輸入代碼" image:[UIImage imageNamed:@""]];
+    CLActionAlertControl *control = [[CLActionAlertControl alloc] initInputActionWithFrame:CGRectMake(self.view.center.x - kCLActionAlertControlWidth / 2, self.view.center.y - CLInputAlertHeight / 2, kCLActionAlertControlWidth, CLInputAlertHeight) title:@"Title \n subtitle" hint:@"Input here" image:[UIImage imageNamed:@""]];
     
     [control setActionBlock:^(CLAction action, id sender) {
         if (action == CLActionOK)

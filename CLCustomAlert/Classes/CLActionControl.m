@@ -88,7 +88,7 @@ const static CGFloat animationOffset = 15.f;
     cancelButton.layer.cornerRadius = 5.f;
     cancelButton.tag = CLActionCancel;
     [cancelButton setTintColor:[UIColor whiteColor]];
-    [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+    [cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
     
     [cancelButton addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -98,7 +98,7 @@ const static CGFloat animationOffset = 15.f;
     confirmButton.layer.cornerRadius = 5.f;
     confirmButton.tag = CLActionConfirm;
     [confirmButton setTintColor:[UIColor whiteColor]];
-    [confirmButton setTitle:@"確定" forState:UIControlStateNormal];
+    [confirmButton setTitle:@"Confirm" forState:UIControlStateNormal];
     
     [confirmButton addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
     

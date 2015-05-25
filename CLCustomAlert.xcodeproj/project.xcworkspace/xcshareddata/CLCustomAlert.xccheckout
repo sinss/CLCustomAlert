@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5A061B83-C683-4D90-A1B9-6D412B6C00DC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CLCustomAlert</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA5BEFDEC2804848C13D42042EA82194548750D8</key>
+		<string>https://github.com/sinss/CLCustomAlert.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CLCustomAlert.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA5BEFDEC2804848C13D42042EA82194548750D8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sinss/CLCustomAlert.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA5BEFDEC2804848C13D42042EA82194548750D8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA5BEFDEC2804848C13D42042EA82194548750D8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CLCustomAlert</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -197,7 +197,7 @@ const static CGFloat animationOffset = 15.f;
     cancelButton.layer.cornerRadius = 5.f;
     cancelButton.tag = CLActionCancel;
     [cancelButton setTintColor:[UIColor whiteColor]];
-    [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+    [cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
     
     [cancelButton addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -207,7 +207,7 @@ const static CGFloat animationOffset = 15.f;
     earnButton.layer.cornerRadius = 5.f;
     earnButton.tag = CLActionUpdate;
     [earnButton setTintColor:[UIColor whiteColor]];
-    [earnButton setTitle:@"更新" forState:UIControlStateNormal];
+    [earnButton setTitle:@"Update" forState:UIControlStateNormal];
     
     [earnButton addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -271,7 +271,7 @@ const static CGFloat animationOffset = 15.f;
     pointLabel.textColor = [UIColor orangeColor];
     pointLabel.textAlignment = NSTextAlignmentCenter;
     pointLabel.font = [UIFont fontWithName:defaultFontCondensedBold size:25];
-    pointLabel.text = [NSString stringWithFormat:@"%@ 點", self.points];
+    pointLabel.text = [NSString stringWithFormat:@"%@ points", self.points];
     
     currentY = imgv.frame.size.height;
     
@@ -297,7 +297,7 @@ const static CGFloat animationOffset = 15.f;
     copyButton.tag = CLActionTakeALook;
     [copyButton setTintColor:[UIColor whiteColor]];
     [copyButton setImage:self.cpImage forState:UIControlStateNormal];
-    [copyButton setTitle:@"逛逛去" forState:UIControlStateNormal];
+    [copyButton setTitle:@"take a look" forState:UIControlStateNormal];
     
     [copyButton addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -308,7 +308,7 @@ const static CGFloat animationOffset = 15.f;
     shareButton.tag = CLActionInvite;
     [shareButton setTintColor:[UIColor whiteColor]];
     [shareButton setImage:self.shareImage forState:UIControlStateNormal];
-    [shareButton setTitle:@"邀請朋友" forState:UIControlStateNormal];
+    [shareButton setTitle:@"Button" forState:UIControlStateNormal];
     
     [shareButton addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
     
