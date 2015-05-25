@@ -19,7 +19,7 @@ It's custom alert that used in our product at Ceylon Innovation Co., Ltd
 
 ```
 
-．ActionSheet style
+．ActionSheet like
 
 ```objective-c
 #import "CLActionControl.h"
@@ -42,7 +42,7 @@ It's custom alert that used in our product at Ceylon Innovation Co., Ltd
 
 ```
 
-．Alert Style
+．Alert like
 
 ```objective-c
 #import "CLActionAlertControl.h"
