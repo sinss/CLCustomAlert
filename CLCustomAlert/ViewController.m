@@ -31,7 +31,7 @@
 #pragma mark - Test UI
 - (IBAction)showAlertControl:(id)sender
 {
-    CLAlertControl *control = [[CLAlertControl alloc] initWithFrame:CGRectMake(self.tabBarController.view.center.x - kCLAlertControlWidth / 2, -CLActionControlHeight, kCLAlertControlWidth, CLAlertControlHeight) title:@"Title" message:@"Message With %@ \n subMessage" targetName:@"Target Name" image:[UIImage imageNamed:@"dota_bg"]];
+    CLAlertControl *control = [[CLAlertControl alloc] initWithFrame:CGRectMake(self.view.center.x - kCLAlertControlWidth / 2, -CLActionControlHeight, kCLAlertControlWidth, CLAlertControlHeight) title:@"Title" message:@"Message With %@ \n subMessage" targetName:@"Target Name" image:[UIImage imageNamed:@"dota_bg"]];
     
     [control showInView:self.view];
     
@@ -40,7 +40,7 @@
 
 - (IBAction)showActionControl:(id)sender
 {
-    CLActionControl *control = [[CLActionControl alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.tabBarController.view.frame), CGRectGetWidth(self.view.frame), CLActionControlHeight) title:@"Title" message:@"mssage\nmessage2" hintImage:nil];
+    CLActionControl *control = [[CLActionControl alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame), CGRectGetWidth(self.view.frame), CLActionControlHeight) title:@"Title" message:@"mssage\nmessage2" hintImage:nil];
     
     [control setActionBlock:^(CLAction action, id sender){
         
