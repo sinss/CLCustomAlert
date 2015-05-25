@@ -7,6 +7,9 @@ It's custom alert that used in our product at Ceylon Innovation Co., Ltd
 
 #Screenshot
 
+![](https://github.com/sinss/CLCustomAlert/blob/master/screenshot/screenshot1.png)
+
+![](https://github.com/sinss/CLCustomAlert/blob/master/screenshot/screenshot2.png)
 
 
 #How to use
